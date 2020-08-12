@@ -39,38 +39,3 @@ app.use(function (err, req, res, next) {
 });
 
 module.exports = app;
-
-//  const db = client.db(dbname);
-//  dboper
-//    .insertDocument(db, { name: "Vadonut", description: "Test" }, "dishes")
-//    .then((result) => {
-//      console.log("Insert Document:\n", result.ops);
-
-//      return dboper.findDocuments(db, "dishes");
-//    })
-//    .then((result) => {
-//      console.log("Found Documents:\n", result);
-
-//      return dboper.updateDocument(
-//        db,
-//        { name: "Vadonut" },
-//        { description: "Updated Test" },
-//        "dishes"
-//      );
-//    })
-//    .then((result) => {
-//      console.log("Updated Document:\n", result.result);
-
-//      return dboper.findDocuments(db, "dishes");
-//    })
-
-//    .then((docs) => {
-//      console.log("Found Updated Documents:\n", docs);
-
-//      db.dropCollection("dishes", (result) => {
-//        console.log("Dropped Collection: ", result);
-
-//        client.close();
-//      });
-//    });
-//});
